@@ -5,13 +5,13 @@ import PlayProject._
 object ApplicationBuild extends Build {
 
     val appName         = "aerogel_demo"
-    val appVersion      = "1.0"
+    val appVersion      = "1.0-SNAPSHOT"
 
     val appDependencies = Seq(
       // Add your project dependencies here,
     )
 
-    val main = PlayProject(appName, appVersion, appDependencies).settings(defaultScalaSettings:_*).settings(
+    val main = PlayProject(appName, appVersion, appDependencies, mainLang = SCALA).settings(
       // Add your own project settings here      
     )
 
